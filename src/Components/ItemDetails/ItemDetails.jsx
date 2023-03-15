@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import img from "../../Assets/img/item.png";
 import "./index.scss";
 
 export default function ItemDetails() {
@@ -13,7 +12,7 @@ export default function ItemDetails() {
     findIndex = characters.findIndex((character) => character.id === idx);
   }
   const character = characters[findIndex];
-  console.log(character);
+  
   return (
     <div className="details">
       <div className="wrapper">

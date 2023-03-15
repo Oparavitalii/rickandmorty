@@ -1,6 +1,6 @@
 import React , {useEffect} from "react";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
 import { getCharacters } from "./store/createSlice";
@@ -17,12 +17,12 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/character/:id" element={<Character />} />
         </Routes>
-      </Router>
+      </HashRouter>
     </div>
   );
 }

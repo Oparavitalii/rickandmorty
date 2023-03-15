@@ -16,7 +16,6 @@ export default function DetailsCharacter() {
     return <Error />;
   }
   
-  console.log(characters)
   return (
     <div>
       <div>{characters.length && <ItemDetails />}</div>
