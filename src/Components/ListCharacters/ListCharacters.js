@@ -6,8 +6,10 @@ import Loader from "../Loader/Loader";
 import "./index.scss";
 
 export default function AllCharacters() {
-  const {query, characters, loading, error } = useSelector((state) => state.store);
-console.log(query)
+  const { query, characters, loading, error } = useSelector(
+    (state) => state.store
+  );
+
   if (loading) {
     return <Loader />;
   }

@@ -1,7 +1,7 @@
 @import "../../Style/mixin.scss";
 
 .details {
-    margin: 20px auto;
+  margin: 20px auto;
   &__cont {
     max-width: 1003px;
     margin: 0 auto;
@@ -25,8 +25,7 @@
     margin-bottom: 48px;
     text-align: center;
   }
-  &__information {
-  }
+
   &__label {
     font-weight: 400;
     font-size: 20px;
@@ -59,7 +58,7 @@
   padding: 0 15px;
 }
 
-@media screen and (max-width:530px) {
+@media screen and (max-width: 530px) {
   .details {
     img {
       width: 150px;
